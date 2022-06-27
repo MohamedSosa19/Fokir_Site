@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+
+.home{
+
+    background-color: rgba(0,0,0, 1);
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.cover{
+
+    background-image: url(Images/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+
+}
+.navbar-nav .nav-item .nav-link
+{
+
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+
+    color: #d83319;
+    transition: 1s all ease-in-out;
+}
+
+.navbar a
+{
+
+    font-size: 18px;
+    font-weight: 700;
+}
+.vh-85{
+
+    width: 85%;
+}
+
+.home-content{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.home-content .content{
+    color: white;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.home-content .content h1
+{
+    color: #ff305b;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.home-content .content p
+{
+    font-size: 20px;
+
+}
+.home-content .content p
+{
+    font-size: 25px;
+
+}
+
+.home-content .content p::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes typing{
+
+    0%{content: "D|";}
+    3%{content: "De|"}
+    6%{content: "Des|"}
+    9%{content: "Desi|"}
+    12%{content: "Desig|"}
+    15%{content: "Design|"}
+    18%{content: "Desig|"}
+    21%{content: "Desi|"}
+    24%{content: "Des|"}
+    27%{content: "De|"}
+    30%{content: "D|"}
+    33%{content: "|"}
+    36%{content: "D|"}
+    39%{content: "De|"}
+    42%{content: "Dev|"}
+    45%{content: "Deve|"}
+    48%{content: "Devel|"}
+    51%{content: "Develo|"}
+    54%{content: "Develop|"}
+    57%{content: "Developm|"}
+    60%{content: "Developme|"}
+    63%{content: "Developmen|"}
+    66%{content: "Development|"}
+    69%{content: "Developmen|"}
+    72%{content: "Developmen|"}
+    75%{content: "Developme|"}
+    78%{content: "Developm|"}
+    81%{content: "Develop|"}
+    84%{content: "Develo|"}
+    87%{content: "Devel|"}
+    90%{content: "Deve|"}
+    93%{content: "Dev|"}
+    96%{content: "De|"}
+    99%{content: "D|"}
+    100%{content: "|"}
+
+
+}
+
+
+
+/* Toogler Media Queries */
+
+@media (max-width: 767px)
+{
+
+    .navbar-expand-md .navbar-nav {
+
+      background-color: #333333;
+      text-align: center;
+      z-index: 5;
+
+    }
+    .home-content{
+        display: flex;
+        width: 80%;
+        margin: auto;
+
+
+    }
+    .home-content .content
+   {
+
+    position: absolute;
+    top: 45%;
+    z-index: -1;
+    height: 80vh;
+    font-family:'Source Sans Pro', sans-serif;
+
+  }
+   .home-content .content h1
+  {
+    font-size: 25px;
+
+
+  }
+  .home-content .content h3,.home-content .content p
+  {
+    font-size: 16px;
+
+
+  }
+
+
+
+}
+
+/* About US */
+
+
+
+.bord{
+    border: 10px #555555 solid;
+
+    border-radius: 8px;
+
+}
+
+.profile-img{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+
+
+
+}
+.profile-img img{
+
+    width: 100%;
+
+
+
+}
+.tran{
+    height: 0px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.profile-img:hover .tran{
+
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.profile-cv p{
+border-bottom: dashed 2px gray;
+line-height: 35px;
+}
+.info li{
+padding: 5px 0px;
+}
+.info ul{
+    list-style: none;
+    }
+.info span{
+    color: black;
+    }
+
+/* Our Services */
+
+.our-services{
+    background-color: #F1F1F1;
+}
+
+.our-services .service:hover
+{
+    background-color: white;
+    transition: 0.5s ease-in-out all;
+}
+.our-services .service img
+{
+    width: 50px;
+    height: 50px;
+}
+.our-services .service:hover img
+{
+    transform: scale(1.2);
+}
+
+/* Our Portfolio */
+
+.our-portfolio
+{
+    background-color: #FFFFFF;
+
+}
+.our-portfolio a
+{
+color: black;
+padding: 5px 10px;
+text-decoration: none;
+}
+
+.our-portfolio .transtion
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.our-portfolio .transtion:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+/* Our Rates */
+
+
+.our-rates{
+    background-color: #F1F1F1;
+
+}
+/* Client's Feedback */
+
+.feedback
+{
+    background-color: white;
+   
+
+}
+
+
+.feedback .feedback-img img
+{
+    
+border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    z-index: 999999999999;
+
+}
+.feedback .logo
+{
+    
+    position: relative;
+    top: -143px;
+    left: -96px;
+    height: 294px;
+    width: 216px;
+    background-color: rgb(245, 1, 1);
+    transform: rotate(45deg);
+
+
+}
+@media (max-width: 767px)
+{
+    .feedback .feedback-img img
+{
+    
+border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    z-index: 999999999999;
+
+}
+}
+
+ /* Our Blog */
+
+.our-blog{
+background-color: #F1F1F1;
+}
+
+.our-blog a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    }
+
+    .our-blog a:hover{
+        color: red;
+        text-decoration: none;
+        }
+.frame img{
+ width: 100%;
+
+}
+
+.blog-content
+{
+    padding: 5px 5px;
+    background-color: white;
+}
+
+
+
+
+/* Contact US */
+.contact-us{
+    background-color: rgb(255, 255, 255);
+}
+.contact-us .container{
+    width: 60%;
+    margin: auto;
+}
+
+/* Site Footer */
+
+footer{
+    background-color: #333333;
+    color: whitesmoke;
+
+}
+
+footer a img{
+    opacity: 0.5;
+
+}
+
+footer a:hover img{
+    opacity: 1;
+    background-color: rgb(25, 75, 31);
+
+}
+
+footer p a:hover a{
+    text-decoration: underline;
+}
